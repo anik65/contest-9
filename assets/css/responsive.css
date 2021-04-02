@@ -1,0 +1,121 @@
+@media(max-width:767px){
+
+    .logo a img {
+        width: 120px;
+        height: 54px; 
+      }
+      nav.fixed-top { 
+        padding-bottom: 8px; 
+      
+      }
+      .middle_area {
+        padding: 0 75px;
+      }
+     
+      .body_one {
+        width: 35%;
+      }
+      .body_two {
+        width: 50%;
+      }
+      .body_three {
+       width: 10%;
+      }
+      .dro_list { 
+        margin: 10px 14px;
+      }
+      .dro_list li { 
+        margin: 10px 15px;
+      }
+      .dro_list li a {
+        font-size: 20px; 
+      }
+     .score,.dro_list,.setting{
+         display: none;
+     }
+} 
+
+
+
+@media(min-width:768px){ 
+    .logo a img {
+        width: 140px;
+        height: 54px; 
+      }
+      nav.fixed-top { 
+        padding-bottom: 8px; 
+      
+      }
+      .middle_area {
+        padding: 0 75px;
+      } 
+      .body_one {
+        width: 20%;
+      }
+      .body_two {
+        width: 30%;
+      }
+      .body_three {
+        width: 50%; 
+      }
+      .dro_list { 
+        margin: 10px 14px;
+      }
+      .dro_list li { 
+        margin: 10px 15px;
+      }
+      .dro_list li a {
+        font-size: 20px; 
+      }
+     
+} 
+
+@media(min-width:1024px){
+    .logo a img {
+        width: 160px;
+        height: 54px; 
+      }
+      nav.fixed-top { 
+        padding-bottom: 2px; 
+      
+      }
+      .middle_area {
+        padding: 0 75px;
+      }
+    
+      .dro_list { 
+        margin: 10px 70px; 
+      }
+      .dro_list li { 
+        margin: 10px 20px;
+      }
+      .dro_list li a {
+        font-size: 25px; 
+      }
+      .left-div,.right-div {
+        width: 100%; 
+      }
+}
+@media(min-width:1200px){
+    .logo a img {
+        width: 200px;
+        height: 54px; 
+      }
+      .middle_area {
+        padding: 0 75px;
+      }
+      .content-body {
+        display: flex;
+      }
+      .left-div {
+        width: 32%;
+        
+      }
+      .right-div {
+        width: 68%;
+      }
+      .right-div-content { 
+        margin-left: 20px;
+      
+      }
+}

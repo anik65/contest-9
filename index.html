@@ -15,133 +15,472 @@
     <!--fontawesome.css-->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <!--fontawesome.css-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
     <!--aos.css-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--responsive.css-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css">  -->
     <!--google font-->
-
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap" rel="stylesheet">
 
 </head>
 
 <!--====================================================-->
 
-<body style="font-family: 'Kiwi Maru', serif;">
-    <header
-        style="background: url(assets/img/gray-desk-with-laptop-notepad-with-blank-sheet-pot-flower-stylus-tablet-retouching_155003-2431.jpg) no-repeat;background-size: cover;">
-        <div class="logo">
-            <a href="">
-                <img src="assets/img/logo-1.png" alt="">
-            </a>
-            <a href="" class="log_in">Log In</a>
-        </div>
-        <div class="header-body">
+<body style="font-family: 'Montserrat', sans-serif;">
+    <header id="header">
+        <nav class="navbar-expand-lg">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-12">
-                        <div class="profile text-center">
+                    <div class="col-lg-3">
+                        <div class="logo">
                             <a href="">
-                                <img src="assets/img/man.jpg" alt="">
+                                <img src="assets/img/NH.png" alt="" class="img">
                             </a>
-                            <h4>Anik Kumar Bosu</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9"> <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample03">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">In-Motion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Current</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Problems</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Downloads</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Links</a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="users">
+                            <li type="button">Login</li>
+                            <li type="button">Register</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup">
+                    <div class="cross">
+                        <i class="fas fa-times" type="button"></i>
+                    </div>
+                    <div class="popup_body">
+                        <div class="row no-gutter">
+                            <div class="col-lg-4" style="  border-right: 1px solid #fff;border-left: 1px solid #fff;">
+                                <div class="popup_heading">
+                                    <h4>Welcome to NavHack! </h4>
+                                    <p>Login, or create an account</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" style="  border-right: 1px solid #fff;border-left: 1px solid #fff;">
+                                <div class="form_login">
+                                    <h4>Member Login</h4>
+                                    <form action="">
+                                        <label for="">Username:</label><br>
+                                        <input type="text" name="username"><br>
+                                        <label for="">Password:</label><br>
+                                        <input type="text" name="username"><br>
+                                        <input type="checkbox" id="check"> <label for="">Remember me</label><br>
+                                        <input type="submit" id="submit"> <label for=""><a href="">Lost
+                                                Password?</a></label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" style="  border-right: 1px solid #fff;border-left: 1px solid #fff;">
+                                <div class="form_login">
+                                    <h4>Member Login</h4>
+                                    <form action="">
+                                        <label for="">Username:</label><br>
+                                        <input type="text" name="username"><br>
+                                        <label for="">Email:</label><br>
+                                        <input type="text" name="username"><br>
+                                        <label for="">Password:</label><br>
+                                        <input type="text" name="username"><br>
+                                        <p> A verification link will be e-mailed to you.</p>
+                                        <input type="submit" id="submit" value="Register">
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <section id="media">
+        </nav>
+    </header>  
+    <section id="main-body">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <ul class="media_list text-center">
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h3 class="text-center">Contact</h3>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <form action="" class="text-center">
-                        <label for="">First Name:</label>
-                        <input type="text"> <br>
-                        <label for="">Last Name:</label>
-                        <input type="text"> <br>
-                        <label for="">Email Add:</label>
-                        <input type="email"> <br>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="gellary">
-        <div class="container">
-            <h3 class="text-center">Gellary</h3>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img src="assets/gellary/romantic-valentines-day-card.jpg" alt="" class="img-fluid">
+                <div class="col-lg-8">
+                    <div class="message_div">
+                        <h4 class="text-center">Welcome to Navhack</h4>
+                        <p>Over the next few weeks, the site is migrating to a new system, and a new design.
+                            User registrations are now available.</p>
+                    </div>
+                    <div class="right-div">
+                        <div class="right-div-content pb-0">
+                            <div class="posts">
+                                <div class="post">
+                                    <div class="post-content">
+                                        <div class="post_head">
+                                            <div class="post_man">
+                                                <a href=""> <canvas class="polyavatar" width="55" height="55"></canvas>
+                                                </a>
+                                            </div>
+                                            <div class="man_info">
+                                                <p>Marina Valentine</p>
+                                                <p> 5 hour ago</p>
+                                            </div>
+                                            <div class="post_setting">
+                                                <a href=""><i class="far fa-edit"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="post-body">
+                                            <p>Hi to all! Remember that today I'll be livestreaming along with
+                                                @NekoBebop
+                                                the new character
+                                                of the brand new Xenowatch patch "Anya Darkness". See you there!</p>
+                                            <a href=""> <img
+                                                    src="assets/time-img/wild-game-text-effect-template_313044-42.jpg"
+                                                    style="width: 100%;" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="post_footer">
+                                        <div class="react text-center">
+                                            <div class="react_icon">
+                                                <i class="fas fa-thumbs-up" type="button"></i> <span>Like</span>
+                                            </div>
+                                            <div class="react_icon">
+                                                <i class="far fa-comment" type="button"></i> <span>Comment</span>
+                                            </div>
+                                            <div class="react_icon">
+                                                <i class="far fa-share-square" type="button"></i> <span>Share</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                            <img src="assets/gellary/pattern-palette-variation-selecting-cards-sampler_1423-137.jpg"
-                                alt="" class="img-fluid">
+                        <div class="right-div-content pb-0">
+                            <div class="posts">
+                                <div class="post">
+                                    <div class="post-content">
+                                        <div class="post_head">
+                                            <div class="post_man">
+                                                <a href=""> <canvas class="polyavatar" width="55" height="55"></canvas>
+                                                </a>
+                                            </div>
+                                            <div class="man_info">
+                                                <p>Marina Valentine</p>
+                                                <p> 5 hour ago</p>
+                                            </div>
+                                            <div class="post_setting">
+                                                <a href=""><i class="far fa-edit"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="post-body">
+                                            <p>https://www.youtube.com/embed/X2CkYAikehI</p>
+                                            <iframe width="100%" height="315"
+                                                src="https://www.youtube.com/embed/X2CkYAikehI"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="post_footer">
+                                        <div class="react text-center">
+                                            <div class="react_icon">
+                                                <i class="fas fa-thumbs-up" type="button"></i> <span>Like</span>
+                                            </div>
+                                            <div class="react_icon">
+                                                <i class="far fa-comment" type="button"></i> <span>Comment</span>
+                                            </div>
+                                            <div class="react_icon">
+                                                <i class="far fa-share-square" type="button"></i> <span>Share</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                            <img src="assets/gellary/blank-square-wedding-card-purple-flowers-green-leaves-white-backdrop_23-2148187475.jpg"
-                                alt="" class="img-fluid">
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="assets/gellary/romantic-valentines-day-card.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="assets/gellary/pattern-palette-variation-selecting-cards-sampler_1423-137.jpg"
-                                alt="" class="img-fluid">
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="assets/gellary/blank-square-wedding-card-purple-flowers-green-leaves-white-backdrop_23-2148187475.jpg"
-                                alt="" class="img-fluid">
+                        <div class="right-div-content pb-0">
+                            <div class="posts">
+                                <div class="post">
+                                    <div class="post-content">
+                                        <div class="post_head">
+                                            <div class="post_man">
+                                                <a href=""> <canvas class="polyavatar" width="55" height="55"></canvas>
+                                                </a>
+                                            </div>
+                                            <div class="man_info">
+                                                <p>Marina Valentine</p>
+                                                <p> 5 hour ago</p>
+                                            </div>
+                                            <div class="post_setting">
+                                                <a href=""><i class="far fa-edit"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="post-body">
+                                            <p>Hi to all! Remember that today I'll be livestreaming along with
+                                                @NekoBebop
+                                                the new character
+                                                of the brand new Xenowatch patch "Anya Darkness". See you there!</p>
+                                            <a href=""> <img
+                                                    src="assets/time-img/wild-game-text-effect-template_313044-42.jpg"
+                                                    style="width: 100%;" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="post_footer">
+                                        <div class="react text-center">
+                                            <div class="react_icon">
+                                                <i class="fas fa-thumbs-up" type="button"></i> <span>Like</span>
+                                            </div>
+                                            <div class="react_icon">
+                                                <i class="far fa-comment" type="button"></i> <span>Comment</span>
+                                            </div>
+                                            <div class="react_icon">
+                                                <i class="far fa-share-square" type="button"></i> <span>Share</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <div class="left-div">
+                        <div class="left-div-content">
+                            <h6>International</h6>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-div-content">
+                            <h6>Sports</h6>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-div-content">
+                            <h6>Actors</h6>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/time-img/wild-game-text-effect-template_313044-42.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Hi to all! Remember that today I'll be livestreaming along with
+                                            @NekoBebop </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
+        </div> 
     </section>
+    <div aria-label="Page navigation example  ">
+        <ul class="pagination text-center">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
+
     <!--====================================================-->
 
     <!--js plugins-->
     <!--jquery.min.js-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
     <!--bootstrap.min.js-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!--jquery.counterup.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
-        integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
-        crossorigin="anonymous"></script>
-    <!--waypoints.min.js-->
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="assets/js/polyavatar.js"></script>
+
+
     <script src="assets/js/style.js"></script>
 
+    <script>
+        var newInstance = new PolygonAvatar({
+            selector: '.polyavatar',
+            image: 'assets/img/man.jpg',
+            progressBarColor: '#4ff461',
+            borderColor: '#1d2333',
+            percentage: '.80',
+            online: true,
+            onlineColor: "#16f54a",
+            offlineColor: '#fc1735',
 
+        });
+        var newInstance = new PolygonAvatar({
+            selector: '.polyavatar-2',
+            image: 'assets/img/man.jpg',
+            percentage: '.80',
+            online: false,
+            progressBarColor: '#4ff461',
+
+            offlineColor: '#fc1735',
+
+        });
+        var newInstance = new PolygonAvatar({
+            selector: '.polyavatar-4',
+            image: 'assets/img/man.jpg',
+            percentage: '.80',
+            online: false,
+            progressBarColor: '#4ff461',
+
+        })
+    </script>
 
 </body>
 
